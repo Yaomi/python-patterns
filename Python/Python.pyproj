@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>026aa726-7210-435a-99e7-9487d4c1041f</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Python.py</StartupFile>
+    <SearchPath>Patterns\Singleton\;Patterns\Builder\;Patterns\FactoryMethod\;Patterns\AbstractFactory\;Patterns\Observer\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Python</Name>
+    <RootNamespace>Python</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Patterns\AbstractFactory\AfricaFactory.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\AbstractFactory\AmericaFactory.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\AbstractFactory\AnimalWorld.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\AbstractFactory\Bison.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\AbstractFactory\Carnivore.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\AbstractFactory\ContinentFactory.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\AbstractFactory\Herbivore.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\AbstractFactory\Lion.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\AbstractFactory\Wildbeest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\AbstractFactory\Wolf.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\Builder\Builder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\Builder\ConcreteBuilder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\Builder\Director.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\Builder\Product.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\FactoryMethod\BibliographyPage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\FactoryMethod\ConclusionPage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\FactoryMethod\Document.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\FactoryMethod\EducationPage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\FactoryMethod\ExperiencePage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\FactoryMethod\IntroductionPage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\FactoryMethod\Page.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\FactoryMethod\Report.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\FactoryMethod\ResultsPage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\FactoryMethod\Resume.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\FactoryMethod\SkillsPage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\FactoryMethod\SummaryPage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\Observer\IBM.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\Observer\Investor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\Observer\InvestorBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\Observer\Stock.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Patterns\Singleton\Singleton.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Python.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Patterns\" />
+    <Folder Include="Patterns\Builder\" />
+    <Folder Include="Patterns\FactoryMethod\" />
+    <Folder Include="Patterns\AbstractFactory\" />
+    <Folder Include="Patterns\Observer\" />
+    <Folder Include="Patterns\Singleton\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
